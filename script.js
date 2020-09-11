@@ -15,17 +15,18 @@ function createPostList(title, body, postID) {
   cardBody = document.createElement('div');
   cardBody.className = '';
 
-  cardTitle = document.createElement('h5');
-  cardTitle.innerText = title.substring(0,20).toUpperCase();
+  cardTitle = document.createElement('h4');
+  cardTitle.innerText = title.substring(0,20).toUpperCase() + ".";
   cardTitle.className = 'card-title';
 
   cardContent = document.createElement('div');
-  cardContent.innerText = body.substring(0,30);
+  cardContent.innerText = body.substring(0,30) + "...";
   cardContent.className = 'card-body';
 
-  cardButton = document.createElement('button');
+  cardButton = document.createElement('a');
+  cardButton.href = "post" + (postID + 1) + ".html";
   cardButton.innerText = 'Read More';
-  cardButton.className = 'btn btn-lg btn-warning';
+  cardButton.className = 'btn btn-lg btn-light';
   cardButton.id = postID;
 
   cardBody.appendChild(cardTitle);

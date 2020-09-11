@@ -1,0 +1,35 @@
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #69779b !important;
+    color: #c3c3c3 !important;
+    font-family: 'Raleway', sans-serif !important;
+    text-align: center !important;
+    align-self: center;
+    margin: 5px;
+}
+
+h1 {
+    font-family: 'Abril Fatface', cursive;
+    padding: 1rem;
+    font-size: 3.5rem !important;
+    color: azure;
+    text-shadow: 1.5px 1.5px #f7f2f2;
+
+}
+
+h4 {
+    font-family: 'Abril Fatface', cursive;
+    padding: 1rem;
+    color: #808080;
+}
+
+.card {
+    margin-left: 20px;
+}
+
+.btn {
+    background-color: #e94560 !important;
+    margin-bottom: 15px;
+    position: center;
+}

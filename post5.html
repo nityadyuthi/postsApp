@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:wght@500&display=swap" rel="stylesheet"
+     crossorigin="anonymous">
+     <!-- CSS File -->
+     <link rel="stylesheet" href="styles/posts.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+        <h1 id="title"></h1>
+        <h3 id="body"></h3>
+</body>
+<script>
+fetch("https://jsonplaceholder.typicode.com/posts/5")
+  .then((response) => response.json())
+  .then(data => {
+      document.title = data.title;
+      document.getElementById("title").innerHTML = data.title.toUpperCase() + ".";
+      document.getElementById("body").innerHTML = data.body[0].toUpperCase() + data.body.substring(1, data.body.length-1) + ".";
+  })
+</script>
+</html>
